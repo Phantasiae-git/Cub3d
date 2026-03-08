@@ -1,6 +1,6 @@
-# cub3d
+# Cub3d
 
-**A raycasting engine inspired by Wolfenstein 3D (with a trippy twist bc I)**
+**A raycasting engine inspired by Wolfenstein 3D (with a trippy twist)**
 
 A 42 curriculum project that started as a classic raycasting renderer but ended up with two extra modes that use the engine's own output as wall textures, creating recursive and feedback-loop visuals that are slightly cursed.
 
