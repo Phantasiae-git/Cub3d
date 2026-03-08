@@ -37,8 +37,8 @@ In my head it looked like a really cool idea, and it is, but in practice, after 
 Each frame, the wall texture is a snapshot of the last frame, and that last frame had walls occupying some percentage of its pixels (like 40%), so the new wall TEXTURES are 40% wall and 60% ceiling/floor. Next frame, those textures get rendered on the walls again, and now the wall-within-wall percentage is 40% of 40% = 16%. And so on it shrinks exponentially toward zero, so after some seconds, the textures are almost entirely ceiling and floor colors, and the walls fade into a ghostly soup (the pattern is really cool tho).
 
 **How it works:** same multi-pass DDA approach as Mode 2, but each frame samples from the previous frame buffer instead of the current one.
----
 
+---
 
 ## DDA Raycasting
 
