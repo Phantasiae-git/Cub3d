@@ -8,8 +8,6 @@ Built from scratch in **C** with **miniLibX**.
 
 ---
 
-## The 3 Versions
-
 ### Mode 1 — Classic
 
 ![](https://github.com/Phantasiae-git/Cub3d/blob/main/cub3d_0.gif)
