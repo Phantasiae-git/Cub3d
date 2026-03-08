@@ -22,7 +22,7 @@ The OG raycasting with pixel art textures mapped to each wall face. You can walk
 
 Instead of static pixel art, the wall textures are the current frame itself. Each cardinal wall direction gets a version of the rendered frame rotated to match its orientation (0°, 90°, 180°, 270° for N, E, S, W). The result is a mirror-house effect.
 
-**How it works:** the DDA raycasting pass runs once for each wall direction to generate four rotated frame textures, then one final pass composites the scene using those generated textures as wall surfaces.
+**How it works:** the DDA raycasting pass runs once for each wall direction to generate 4 rotated frame textures, then one final pass composites the scene using those generated textures as wall surfaces.
 
 ---
 
@@ -49,7 +49,7 @@ For each vertical column of pixels on screen:
 1. **Cast ray** from the player's position into the map at the corresponding angle
 2. **Walk through the grid** - the DDA algo efficiently walks the ray through map cells, checking for wall hits at each grid cell EDGE
 3. **Calculate wall height** - when a wall is hit, the perpendicular distance to the wall determines is inversely proportional to how tall it is
-4. **Project texture** — the exact point where the ray hit the wall determines which column of the texture to draw
+4. **Project texture** - the exact point where the ray hit the wall determines which column of the texture to draw
 
 For Modes 2 and 3, this process runs **multiple times per frame** so it gets pretty laggy
 
